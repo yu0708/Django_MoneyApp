@@ -1,0 +1,15 @@
+<h1>index</h1>
+
+<table>
+    <tr>
+        <th>Item</th>
+    </tr>
+    {% comment %} viewsで指定したモデルの中身 {% endcomment %}
+    {% for list in lists %}
+    <tr>
+        <td>{{ list.title }}</td>
+    </tr>
+    {% empty %}
+    <h3>No items in list</h3>
+    {% endfor %}
+</table>
