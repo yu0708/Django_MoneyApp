@@ -9,4 +9,5 @@ class ListList(ListView):
 
 class ListDetail(DetailView):
     template_name = 'base/list_detail.html'
+    context_object_name = 'list'
     model = List

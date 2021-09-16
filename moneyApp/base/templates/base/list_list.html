@@ -8,6 +8,7 @@
     {% for list in lists %}
     <tr>
         <td>{{ list.title }}</td>
+        <td><a href="{% url 'list_detail' list.id %}">View</a></td>
     </tr>
     {% empty %}
     <h3>No items in list</h3>
